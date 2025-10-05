@@ -1,0 +1,135 @@
+/* RESET */
+body {
+  font: initial;
+}
+
+button {
+  all: unset;
+}
+
+/* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLES */
+
+body {
+  font-family: "inter", "sanserif";
+  height: 100vh;
+  background-image: radial-gradient(ellipse, #385300, #212900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter {
+  width: 476px;
+  height: 615px;
+  background-color: #bef227;
+  border-radius: 12px;
+  box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.counter--limit {
+  background-color: #a3d11b;
+}
+
+.counter__title {
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 0.9;
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+.counter__value {
+  color: #1d2507;
+  font-size: 200px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.counter__reset-button {
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.counter__reset-button:hover {
+  opacity: 0.6;
+}
+
+.counter__reset-icon {
+  font-size: 40px;
+}
+
+.counter__buttons {
+  background-color: #1d2507;
+  height: 116px;
+  margin-top: auto;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+
+.counter__button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.counter__button:hover {
+  background-color: #212b06;
+}
+
+.counter__icon {
+  color: #befe00;
+  opacity: 0.9;
+  font-size: 40px;
+}
+
+.counter__button--decrease {
+}
+
+.counter__icon-minus {
+}
+
+.counter__button--increase {
+  border-left: 1px solid rgba(189, 254, 0, 0.15);
+}
+
+.counter__icon-plus {
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 680px) or (max-height: 700px) {
+  .counter {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .counter__buttons {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .counter__title {
+    margin-top: 100px;
+  }
+}
